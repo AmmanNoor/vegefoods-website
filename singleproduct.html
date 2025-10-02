@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SingleProduct</title>
+  <link rel="stylesheet" href="singleproduct.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="singleproduct-page">
+
+   <!-- NAV -->
+  <header class="site-header" id="top">
+    <div class="nav-inner">
+      <div class="brand">VegeShop</div>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="about.html">About us</a></li>
+
+          <li class="has-sub">
+            <a href="shop.html">shop</a>
+            <ul class="sub">
+               <li><a href="shop.html">Shop</a></li>
+              <li><a href="whitlist.html">Whitlist</a></li>
+              <li><a href="singleproduct.html">Single Product</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <button class="cart-btn" aria-label="Open cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a> <span class="cart-count">0</span></button>
+      </div>
+    </div>
+  </header>
+
+ <section id="hero" class="hero">
+    <div class="hero-slider">
+      <div class="slide active" style="background-image:url('main.jpeg')">
+        <div class="hero-inner">
+          <p> <a href="index.html">Home</a> singleproduct </p>
+          <h1>Single Product</h1>
+        </div>
+      </div>
+    </div>
+ </section>
+
+<section class="product-single">
+  <!-- Product Image -->
+  <div class="product-image">
+    <img src="bell peper.jpg" alt="Bell Pepper">
+  </div>
+
+  <!-- Product Details -->
+  <div class="product-details">
+    <h2 class="product-title">Bell Pepper</h2>
+    <div class="product-rating">
+      <span class="rating-score">5.0</span>
+      <span class="stars">★★★★★</span>
+      <span class="reviews">100 Rating</span>
+      <span class="sold">500 Sold</span>
+    </div>
+
+    <p class="product-price">$120.00</p>
+
+    <p class="product-desc">
+      A small river named Duden flows by their place and supplies it with the 
+      necessary regelialia. It is a paradisematic country, in which roasted parts 
+      of sentences fly into your mouth. Text should turn around and return to its 
+      own, safe country. But nothing the copy said could convince her and so it 
+      didn’t take long until.
+    </p>
+
+    <!-- Size Selector -->
+    <div class="product-size">
+      <label for="size">Size:</label>
+      <select id="size">
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+      </select>
+    </div>
+
+    <!-- Quantity -->
+    <div class="product-quantity">
+      <button class="qty-btn">-</button>
+      <input type="text" value="1">
+      <button class="qty-btn">+</button>
+    </div>
+
+    <p class="stock-info">600 kg available</p>
+
+    <!-- Add to Cart Button -->
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</section>
+
+<section class="related-products">
+  <p class="section-subtitle">Products</p>
+  <h2 class="section-title">Related Products</h2>
+  <p class="section-desc">
+    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+  </p>
+
+  <div class="products-grid">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <span class="discount">30%</span>
+      <img src="bell peper.jpg" alt="Bell Pepper">
+      <h3>BELL PEPPER</h3>
+      <p class="old-price">$120.00</p>
+      <p class="new-price">$80.00</p>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="strawberry.jpg" alt="Strawberry">
+      <h3>STRAWBERRY</h3>
+      <p class="new-price">$120.00</p>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="green beans.jpeg" alt="Green Beans">
+      <h3>GREEN BEANS</h3>
+      <p class="new-price">$120.00</p>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="purple cabbage.jpg" alt="Purple Cabbage">
+      <h3>PURPLE CABBAGE</h3>
+      <p class="new-price">$120.00</p>
+    </div>
+  </div>
+</section>
+
+
+<div class="newsletter-wrap">
+    <div class="newsletter-inner">
+      <div class="newsletter-text">
+        <h3>Subscribe to our Newsletter</h3>
+        <p>Get e-mail updates about our latest shops and special offers</p>
+      </div>
+
+      <form id="newsletterForm" class="newsletter-form" novalidate>
+        <input id="emailField" type="email" placeholder="Enter email address" aria-label="Email address" required>
+        <button type="submit" class="subscribe-btn">Subscribe</button>
+      </form>
+    </div>
+
+
+    <button class="to-top" id="toTop" aria-label="Scroll to top">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M6 15l6-6 6 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+
+<footer>
+    <div class="footer-container">
+      <!-- Column 1 -->
+      <div>
+        <h4>Vegefoods</h4>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Shipping Information</a></li>
+          <li><a href="#">Returns & Exchange</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div>
+        <h4>Have a Questions?</h4>
+        <ul>
+          <li><i class="fa fa-map-marker-alt"></i> 203 Fake St. Mountain View, San Francisco, California, USA</li>
+          <li><i class="fa fa-phone"></i> +2 392 3929 210</li>
+          <li><i class="fa fa-envelope"></i> info@yourdomain.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Copyright ©2025 All rights reserved | This template is made with <i class="fa fa-heart"></i> by 
+      <a href="#">Colorlib</a>
+    </div>
+  </footer>
+
+ <script src="script.js"></script>
+</body>
+</html>
